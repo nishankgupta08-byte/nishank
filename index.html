@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nishank | 3D Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Outfit:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Noise Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-glow"></div>
+
+    <!-- 3D Background Canvas -->
+    <canvas id="webgl-bg"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Nishank<span class="dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#connect" class="nav-cta">Connect</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- 1. HERO SECTION -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="NISHANK">NISHANK</h1>
+                <div class="subtitle-wrapper">
+                    <span class="code-font">&gt;</span>
+                    <span id="typewriter" class="typewriter code-font"></span><span class="cursor">_</span>
+                </div>
+                <a href="#projects" class="btn-primary glow-on-hover">View My Work</a>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. ABOUT SECTION -->
+        <section id="about" class="about section-padding">
+            <div class="container">
+                <div class="about-card glass-card tilt-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
+                    <div class="about-content">
+                        <h2 class="section-title">About Me</h2>
+                        <p>I'm a creative developer blending design and technology to build immersive, performant, and visually stunning digital experiences. I specialize in 3D web graphics, modern front-end frameworks, and interactive animations that bring ideas to life.</p>
+                        
+                        <div class="skills">
+                            <span class="skill-tag glow-tag">JavaScript / ES6+</span>
+                            <span class="skill-tag glow-tag">React & Next.js</span>
+                            <span class="skill-tag glow-tag">Three.js / WebGL</span>
+                            <span class="skill-tag glow-tag">GSAP Animations</span>
+                            <span class="skill-tag glow-tag">CSS3 / SCSS</span>
+                            <span class="skill-tag glow-tag">UI/UX Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. PROJECTS SECTION -->
+        <section id="projects" class="projects section-padding">
+            <div class="container">
+                <h2 class="section-title text-center">My Projects</h2>
+                <div class="projects-grid">
+
+                    <!-- GitHub Repo 1: suri-darling- -->
+                    <div class="project-card glass-card tilt-card" data-tilt data-tilt-max="10" data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.3">
+                        <div class="project-image" style="background: linear-gradient(135deg, #7c3aed 0%, #a855f7 50%, #4f46e5 100%); display:flex; align-items:center; justify-content:center;">
+                            <span style="font-size: 3.5rem;">💜</span>
+                        </div>
+                        <div class="project-info">
+                            <h3>Suri Darling</h3>
+                            <p>A personal website built with love — a beautiful CSS-crafted web experience.</p>
+                            <div class="project-tags">
+                                <span class="code-font">CSS</span>
+                                <span class="code-font">HTML</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/nishankgupta08-byte/suri-darling-" target="_blank" class="btn-secondary">View Repo</a>
+                                <a href="https://github.com/nishankgupta08-byte/suri-darling-" target="_blank" class="btn-icon" title="GitHub">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- GitHub Repo 2: eli-ke-shadi- -->
+                    <div class="project-card glass-card tilt-card" data-tilt data-tilt-max="10" data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.3">
+                        <div class="project-image" style="background: linear-gradient(135deg, #ec4899 0%, #f43f5e 50%, #be185d 100%); display:flex; align-items:center; justify-content:center;">
+                            <span style="font-size: 3.5rem;">💍</span>
+                        </div>
+                        <div class="project-info">
+                            <h3>Eli Ke Shadi</h3>
+                            <p>A beautifully designed digital wedding card for Eli Bhai — styled with CSS.</p>
+                            <div class="project-tags">
+                                <span class="code-font">CSS</span>
+                                <span class="code-font">HTML</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/nishankgupta08-byte/eli-ke-shadi-" target="_blank" class="btn-secondary">View Repo</a>
+                                <a href="https://github.com/nishankgupta08-byte/eli-ke-shadi-" target="_blank" class="btn-icon" title="GitHub">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- GitHub Repo 3: eli-ke-shadi-ka-card -->
+                    <div class="project-card glass-card tilt-card" data-tilt data-tilt-max="10" data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.3">
+                        <div class="project-image" style="background: linear-gradient(135deg, #f59e0b 0%, #ef4444 50%, #ec4899 100%); display:flex; align-items:center; justify-content:center;">
+                            <span style="font-size: 3.5rem;">🎴</span>
+                        </div>
+                        <div class="project-info">
+                            <h3>Eli Ke Shadi Ka Card</h3>
+                            <p>A special digital invitation card project for a wedding celebration.</p>
+                            <div class="project-tags">
+                                <span class="code-font">HTML</span>
+                                <span class="code-font">Web</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/nishankgupta08-byte/eli-ke-shadi-ka-card" target="_blank" class="btn-secondary">View Repo</a>
+                                <a href="https://github.com/nishankgupta08-byte/eli-ke-shadi-ka-card" target="_blank" class="btn-icon" title="GitHub">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- GitHub Repo 4: FAREWELL-of-12th-class -->
+                    <div class="project-card glass-card tilt-card" data-tilt data-tilt-max="10" data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.3">
+                        <div class="project-image" style="background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 50%, #6366f1 100%); display:flex; align-items:center; justify-content:center;">
+                            <span style="font-size: 3.5rem;">🎓</span>
+                        </div>
+                        <div class="project-info">
+                            <h3>Farewell of 12th Class</h3>
+                            <p>An interactive farewell website made for the 12th class graduation celebration.</p>
+                            <div class="project-tags">
+                                <span class="code-font">JavaScript</span>
+                                <span class="code-font">CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/nishankgupta08-byte/FAREWELL-of-12th-class" target="_blank" class="btn-secondary">View Repo</a>
+                                <a href="https://github.com/nishankgupta08-byte/FAREWELL-of-12th-class" target="_blank" class="btn-icon" title="GitHub">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- GitHub Repo 5: example-host2 (sword-dance) -->
+                    <div class="project-card glass-card tilt-card" data-tilt data-tilt-max="10" data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.3">
+                        <div class="project-image" style="background: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%); display:flex; align-items:center; justify-content:center;">
+                            <span style="font-size: 3.5rem;">⚔️</span>
+                        </div>
+                        <div class="project-info">
+                            <h3>Sword Dance</h3>
+                            <p>An animated JavaScript web experience — a dynamic sword dance showcase.</p>
+                            <div class="project-tags">
+                                <span class="code-font">JavaScript</span>
+                                <span class="code-font">HTML</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/nishankgupta08-byte/example-host2" target="_blank" class="btn-secondary">View Repo</a>
+                                <a href="https://github.com/nishankgupta08-byte/example-host2" target="_blank" class="btn-icon" title="GitHub">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- GitHub Repo 6: trip2 -->
+                    <div class="project-card glass-card tilt-card" data-tilt data-tilt-max="10" data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.3">
+                        <div class="project-image" style="background: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #fdba74 100%); display:flex; align-items:center; justify-content:center;">
+                            <span style="font-size: 3.5rem;">✈️</span>
+                        </div>
+                        <div class="project-info">
+                            <h3>Trip 2</h3>
+                            <p>A travel-themed web project — exploring destinations through code.</p>
+                            <div class="project-tags">
+                                <span class="code-font">HTML</span>
+                                <span class="code-font">Web</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/nishankgupta08-byte/trip2" target="_blank" class="btn-secondary">View Repo</a>
+                                <a href="https://github.com/nishankgupta08-byte/trip2" target="_blank" class="btn-icon" title="GitHub">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GitHub Profile CTA -->
+                <div class="glass-card tilt-card" style="margin-top: 4rem; padding: 3rem; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;" data-tilt data-tilt-max="2" data-tilt-scale="1.02">
+                    <h3 style="font-family: var(--font-heading); font-size: 2rem; margin-bottom: 1rem;">All Repos on GitHub</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 1.1rem; max-width: 600px;">Explore all my repositories, open-source contributions, and experimental code on GitHub.</p>
+                    <a href="https://github.com/nishankgupta08-byte" target="_blank" class="btn-primary" style="display: inline-flex; align-items: center; gap: 0.8rem;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        View My GitHub Profile
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. ACHIEVEMENTS SECTION -->
+        <section id="achievements" class="achievements section-padding">
+            <div class="container">
+                <h2 class="section-title text-center">Achievements</h2>
+                <div class="achievements-grid">
+                    <div class="achievement-card glass-card tilt-card" data-tilt data-tilt-max="15">
+                        <div class="achievement-icon glow-text">🏆</div>
+                        <h3>Awwwards SOTD</h3>
+                        <p>Site of the Day winner for outstanding creative web design and 3D integration.</p>
+                        <div class="accent-bar"></div>
+                    </div>
+                    <div class="achievement-card glass-card tilt-card" data-tilt data-tilt-max="15">
+                        <div class="achievement-icon glow-text">🚀</div>
+                        <h3>100k+ Downloads</h3>
+                        <p>Open source animation library reached over 100,000 downloads on NPM.</p>
+                        <div class="accent-bar"></div>
+                    </div>
+                    <div class="achievement-card glass-card tilt-card" data-tilt data-tilt-max="15">
+                        <div class="achievement-icon glow-text">⭐</div>
+                        <h3>Top Rated Freelancer</h3>
+                        <p>Maintained a 100% success score on major freelance platforms for 3 consecutive years.</p>
+                        <div class="accent-bar"></div>
+                    </div>
+                    <div class="achievement-card glass-card tilt-card" data-tilt data-tilt-max="15">
+                        <div class="achievement-icon glow-text">🎤</div>
+                        <h3>Tech Speaker</h3>
+                        <p>Guest speaker at WebGL Conf discussing performance optimization in the browser.</p>
+                        <div class="accent-bar"></div>
+                    </div>
+                    <div class="achievement-card glass-card tilt-card" data-tilt data-tilt-max="15">
+                        <div class="achievement-icon glow-text">🥇</div>
+                        <h3>Hackathon Winner</h3>
+                        <p>First place in the global Web3 development hackathon out of 500+ teams.</p>
+                        <div class="accent-bar"></div>
+                    </div>
+                    <div class="achievement-card glass-card tilt-card" data-tilt data-tilt-max="15">
+                        <div class="achievement-icon glow-text">💡</div>
+                        <h3>Open Source Contributor</h3>
+                        <p>Active contributor to major open source projects including React and Three.js.</p>
+                        <div class="accent-bar"></div>
+                    </div>
+                    <div class="achievement-card glass-card tilt-card" data-tilt data-tilt-max="15">
+                        <div class="achievement-icon glow-text">🎓</div>
+                        <h3>Udacity Graduate</h3>
+                        <p>Completed the Advanced Front-End Web Developer Nanodegree program.</p>
+                        <div class="accent-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. CONNECT SECTION -->
+        <section id="connect" class="connect section-padding">
+            <div class="container">
+                <h2 class="section-title text-center">Let's Connect</h2>
+                <p class="connect-subtitle text-center">Open to new opportunities and exciting projects.</p>
+                
+                <div class="social-grid">
+                    <a href="mailto:nishankgupta08@gmail.com" class="social-card glass-card tilt-card" data-tilt data-tilt-scale="1.1">
+                        <span class="social-icon">GM</span>
+                        <span class="social-name">Gmail</span>
+                        <span class="social-handle code-font">nishankgupta08@gmail.com</span>
+                    </a>
+                    <a href="https://www.instagram.com/nishank_49/" target="_blank" class="social-card glass-card tilt-card" data-tilt data-tilt-scale="1.1">
+                        <span class="social-icon">IG</span>
+                        <span class="social-name">Instagram</span>
+                        <span class="social-handle code-font">@nishank_49</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nishank-gupta-7167a8377/" target="_blank" class="social-card glass-card tilt-card" data-tilt data-tilt-scale="1.1">
+                        <span class="social-icon">IN</span>
+                        <span class="social-name">LinkedIn</span>
+                        <span class="social-handle code-font">/in/nishank-gupta</span>
+                    </a>
+                    <a href="https://discord.gg/Aa2zUuqb" target="_blank" class="social-card glass-card tilt-card" data-tilt data-tilt-scale="1.1">
+                        <span class="social-icon">DC</span>
+                        <span class="social-name">Discord</span>
+                        <span class="social-handle code-font">discord.gg/Aa2zUuqb</span>
+                    </a>
+                    <a href="https://www.snapchat.com/add/nishankgupta24?share_id=e2a9mG7YPhA&locale=en-GB" target="_blank" class="social-card glass-card tilt-card" data-tilt data-tilt-scale="1.1">
+                        <span class="social-icon">SC</span>
+                        <span class="social-name">Snapchat</span>
+                        <span class="social-handle code-font">nishankgupta24</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 6. FOOTER -->
+    <footer>
+        <div class="footer-content container">
+            <div class="footer-logo">Nishank<span class="dot">.</span></div>
+            <p>Built with <span class="purple-heart">💜</span> in the digital realm.</p>
+            <p class="copyright code-font">© 2026 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Libraries -->
+    <!-- Three.js for 3D Background Shapes -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    
+    <!-- GSAP for Scroll Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Vanilla Tilt for 3D Cards -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
